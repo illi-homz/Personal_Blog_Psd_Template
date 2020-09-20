@@ -1,0 +1,12 @@
+.main div {
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 2rem;
+  background: url("../img/01.jpg") center/cover no-repeat;
+}
+@supports (-webkit-appearance: none) {
+  .main div {
+    background: url("../img/01.webp") center/cover no-repeat;
+  }
+}

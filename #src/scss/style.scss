@@ -1,0 +1,20 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+  }
+}
+
+@import "fonts.scss";
+
+.main {
+  div {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 2rem;
+    background: url("../img/01.jpg") center/cover no-repeat;
+  }
+}
